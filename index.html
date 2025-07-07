@@ -1,223 +1,209 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Stephen's Homepage</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/x-icon" href="./images/Steve.jpg">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen Sommer | AI Researcher & Developer</title>
+    <link rel="icon" href="./images/Steve.jpg" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background-color: #0d1117;
+        color: #00ffe0;
+        font-family: 'Fira Code', monospace;
+      }
+      .neon-text {
+        color: #00ffe0;
+        text-shadow: 0 0 6px #00ffe0, 0 0 12px #00ffe0;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      iframe.bot {
+        border: none;
+        width: 100%;
+        height: 500px;
+        border-radius: 1rem;
+        background-color: rgba(0, 255, 224, 0.05);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col items-center p-6">
+    <header class="w-full max-w-5xl flex justify-between items-center mb-10">
+      <h1 class="text-3xl font-bold neon-text">Stephen Sommer</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <main class="w-full max-w-5xl space-y-16">
+      <section id="about" class="glass p-6 shadow-xl">
+        <h2 class="text-2xl font-bold mb-4 neon-text">Who Am I?</h2>
+        <p class="text-lg">
+          AI/ML researcher & developer deeply curious about consciousness, machine learning, and the future of intelligence. I build intelligent systems, reflect on their implications, and dream of open-source breakthroughs that shape tomorrow.
+          <p class="mt-4">
+            Currently earning my Master's of Science in Computer Science – Machine Learning Specialization at Georgia Institute of Technology. I work full-time as a Software Developer at  <a href="https://www.fastenal.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-cyan-400">Fastenal</a>, 
+            where I apply data engineering and machine learning to solve real-world problems.
+            Based in Minnesota, I code with curiosity, hike deer trails with wonder, and practice dark arts rituals in the realm of neural networks.
+          </p>
+      </section>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+      <section id="skills" class="glass p-6 shadow-xl">
+        <h2 class="text-2xl font-bold mb-4 neon-text">Skills</h2>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 list-disc list-inside">
+          <li>Python / Java / SQL</li>
+          <li>PyTorch / TensorFlow / Keras</li>
+          <li>Data Preprocessing & Modeling</li>
+          <li>Reinforcement Learning</li>
+          <li>NLP & Transformers</li>
+          <li>Research Methodology</li>
+        </ul>
+      </section>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Stephen Sommer</strong></a>
-									<ul class="icons">
-										<li><a href="https://twitter.com/kassotstone" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://www.linkedin.com/in/stephen-sommer-0a6bb0164/" class="icon brands fa fa-linkedin"><span class="label">Linkedin</span></a></li>
-										<li><a href="https://www.youtube.com/channel/UC3gU7MeGGn2jDfc2GNCFjKw" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
-										<li><a href="https://stackoverflow.com/users/14005968/pickles91" class="icon brands fa fa-stack-overflow"><span class="label">Stack-Overflow</span></a></li>
-										<li><a href="https://github.com/ssommera" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><i class="large fab fa-discord"><a href="#"></a></i>
-									</ul>
-								</header>
+      <section id="projects" class="glass p-6 shadow-xl">
+        <h2 class="text-2xl font-bold mb-4 neon-text">Projects & Publications</h2>
+      
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Stephen<br /></h1>
-											<p>This is my website.</p>
-										</header>
-										<p>Forward-thinking AI researcher and software developer
-											with a passion for cutting-edge solutions. Adept problem
-											solver and critical thinker, dedicated to advancing the
-											field of artificial intelligence. Thrives in fast-paced
-											environments, working both independently and
-											collaboratively to shape the future of AI technology.</p>
+        <!-- 🔬 Research Presentation -->
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-cyan-300">📄 Poster Presentation – Winona Research Celebration 2024</h3>
+        <p class="text-md text-gray-300">
+          I presented <strong>“Enhancing R2L Intrusion Detection Using Decision Trees”</strong> at the Winona State University Research & Creative Achievement Celebration. This research investigates the application of Decision Tree machine learning algorithms to improve Remote-to-Local (R2L) intrusion detection in cloud computing environments, addressing critical concerns of data security and privacy in the age of AI and big data.
+        </p>
+        <p class="text-md text-gray-300 mt-2">
+          Utilizing the KDD Cup 1999 and NSL-KDD datasets, the study evaluates the performance of the algorithm on each dataset independently and on a combined dataset. Results show that combining the datasets significantly enhances detection accuracy, achieving 99.93% accuracy, 91% detection rate, and a false alarm rate of 0.08%. This outperforms the individual dataset results: KDD Cup 1999 with 99.90% accuracy, 83% detection rate, and 1.08% false alarm rate, and NSL-KDD with 99.83% accuracy, 83% detection rate, and 0.08% false alarm rate.
+        </p>
+        <p class="text-md text-gray-300 mt-2">
+          The findings demonstrate how machine learning, specifically decision trees, can adaptively and effectively safeguard data integrity by rapidly identifying suspicious activities within intrusion detection systems.
+        </p>
+        <p class="mt-4 text-sm text-gray-400">
+          <a href="https://openriver.winona.edu/rca/2024/schedule/36/" target="_blank" class="underline hover:text-cyan-400">View Poster & Abstract</a>
+        </p>
+      </div>
+      
+        <!-- 🧠 GitHub Projects -->
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-cyan-300">🛠️ Featured Open-Source Projects</h3>
+        <ul class="list-disc pl-6 mt-2 text-gray-300 space-y-2">
+          <li>
+            <strong>📊 <a href="https://github.com/ssommera/statistical-array-analysis-python" target="_blank" class="underline hover:text-cyan-400">statistical-array-analysis-python</a></strong>: Python utility for generating synthetic integer arrays and computing key statistical metrics using only standard libraries.
+          </li>
+          <li>
+            <strong>🛡️ <a href="https://github.com/ssommera/intrusion-detection-system-using-decision-trees" target="_blank" class="underline hover:text-cyan-400">intrusion-detection-system-using-decision-trees</a></strong>: Jupyter Notebook demonstrating decision tree based machine learning for enhancing cybersecurity via R2L intrusion detection.
+          </li>
+          <li>
+            <strong>🎙️ <a href="https://github.com/ssommera/AIPersonalAssistant" target="_blank" class="underline hover:text-cyan-400">AIPersonalAssistant</a></strong>: Modular Python voice assistant sandbox exploring speech interfaces, LLM integration, and human-AI interaction components.
+          </li>
+        </ul>
+        <p class="mt-4 text-sm text-gray-400">
+          See more on <a href="https://github.com/ssommera" target="_blank" class="underline hover:text-cyan-400">my GitHub profile</a>.
+        </p>
+      </div>
+      
+        <!-- 📚 Future Publications -->
+        <div>
+          <h3 class="text-xl font-semibold text-cyan-300">📚 Upcoming Publications</h3>
+          <ul class="list-disc pl-6 mt-2 text-gray-300">
+            <li>Integrating symbolic and connectionist AI architectures</li>
+            <li>Philosophical analysis of AI alignment and sentience</li>
+            <li>Bridging stoic ethics and reinforcement learning models</li>
+          </ul>
+        </div>
+      </section>
 
-											<p>Currently pursuing a master's degree in Artificial Intelligence, 
-												specializing in machine learning and deep neural networks. 
-												Experienced in developing robust AI solutions using Python, TensorFlow, and PyTorch. 
-												Proficient in data preprocessing, model training, and evaluation, with a focus on real-world applications.</p>
-    
 
-										<ul class="actions">
-											<li><a href="aboutMe.html" class="button big">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="./images/Stephen.PNG" alt="" />
-									</span>
-								</section>
+      <!-- 🔮 Section: Full Chatbot Embed -->
+    <section id="ai-bot" class="glass p-6 shadow-xl">
+      <h2 class="text-2xl font-bold mb-4 neon-text">Talk to My AI Assistant</h2>
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/kXmF-OZwGqrRL1KNpaItT"
+        width="100%"
+        style="height: 100%; min-height: 700px"
+        frameborder="0"
+        class="bot"
+      ></iframe>
+      <p class="mt-4 text-sm text-gray-400">
+        This assistant is trained on AI research, neuroscience, machine learning, and philosophy of mind. Ask anything from beginner concepts to advanced topics!
+      </p>
+    </section>
 
-							<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Skills</h2>
-								</header>
-								<div class="features">
-									<article>
-										<span class="icon solid fa-flask"></span>
-										<div class="content">
-											<h3>Machine Learning</h3>
-											<p>Strong background in machine learning algorithms and techniques, including supervised and unsupervised learning, deep learning, reinforcement learning, and natural language processing (NLP).</p>
-										</div>
-									</article>
-									<article>
-										<span class="icon brands fa-python"></span>
-										<div class="content">
-											<h3>Programming Languages</h3>
-											<p>Proficiency in programming languages commonly used in AI research, such as Python, Java, and libraries/frameworks like TensorFlow, PyTorch, scikit-learn, and Keras.</p>
-										</div>
-									</article>
-									<article>
-										<span class="icon solid fa-microscope"></span>
-										<div class="content">
-											<h3>Research Methodologies</h3>
-											<p>Experience in designing, conducting, and evaluating experiments to validate and improve AI models. Familiarity with statistical analysis and data interpretation.</p>
-										</div>
-									</article>
-									<article>
-										<span class="icon solid fa-database"></span>
-										<div class="content">
-											<h3>Data Handling</h3>
-											<p>Skills in data preprocessing, feature engineering, and working with large datasets. Knowledge of SQL and NoSQL databases for data storage and retrieval.</p>
-										</div>
-									</article>
-									<article>
-										<span class="icon solid fa-chalkboard-teacher"></span>
-										<div class="content">
-											<h3>Academic Research</h3>
-											<p>Understanding of academic research practices, literature review, and ability to contribute to scientific publications and conferences in the field of AI.</p>
-										</div>
-									</article>
-									<article>
-										<span class="icon solid fa-users"></span>
-										<div class="content">
-											<h3>Collaboration</h3>
-											<p>Proven ability to collaborate effectively in multidisciplinary teams, communicate research findings, and work towards common research goals.</p>
-										</div>
-									</article>
-								</div>
-							</section>
-							
+    <!-- 💬 Floating Assistant on All Pages -->
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...args) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(args);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            }
+          });
+        }
 
-						</div>
-					</div>
+      const onLoad = function () {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "kXmF-OZwGqrRL1KNpaItT"; // <-- This is your Chatbase bot ID
+        script.setAttribute("chatbot-id", "kXmF-OZwGqrRL1KNpaItT");
+        script.setAttribute("domain", "www.chatbase.co");
+        document.body.appendChild(script);
+      };
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+    })();
+  </script>
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+      <!-- 💬 Contact Me -->
+      <section id="contact" class="glass p-6 shadow-xl">
+        <h2 class="text-2xl font-bold mb-4 neon-text">Let's Connect</h2>
+        <ul class="space-y-3 text-gray-300">
+          <li>
+            <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+            <a href="mailto:ssommer.ai@gmail.com" class="hover:underline">Email Me</a>
+          </li>
+          <li>
+            <i class="fab fa-github mr-2" aria-hidden="true"></i>
+            <a href="https://github.com/ssommera" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a>
+          </li>
+          <li>
+            <i class="fab fa-linkedin mr-2" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/in/stephen-sommer-0a6bb0164/" target="_blank" rel="noopener noreferrer" class="hover:underline">LinkedIn</a>
+          </li>
+          <li>
+            <i class="fab fa-youtube mr-2" aria-hidden="true"></i>
+            <a href="https://www.youtube.com/channel/UC3gU7MeGGn2jDfc2GNCFjKw" target="_blank" rel="noopener noreferrer" class="hover:underline">YouTube</a>
+          </li>
+          <li>
+            <i class="fab fa-stack-overflow mr-2" aria-hidden="true"></i>
+            <a href="https://stackoverflow.com/users/14005968/pickles91" target="_blank" rel="noopener noreferrer" class="hover:underline">Stack Overflow</a>
+          </li>
+        </ul>
+      </section>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="aboutMe.html">About Me</a></li>
-										<li>
-											<span class="opener">Education</span>
-											<ul>
-												<li><a href="#">Masters of Science <br> University of Michigan</a></li>
-												<li><a href="#">Bachelors of Science <br> Winona State University</a></li>
-												<li><a href="#">Associates of Applied Science <br> Minnesota State Southeast</a></li>
-												<li><a href="#">Associates of Science <br> Rochester Community and Technical College</a></li>	
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Licenses and Certifications</span>
-											<ul>
-												<li><a href="#">IPC-A-610</a></li>
-												<li><a href="#">IPC J-STD-001</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Experience</span>
-											<ul>
-												<li><a href="#">AI Developer <br> Fastenal</a></li>
-												<li><a href="#">Web Developer <br> Winona State University</a></li>
-												<li><a href="#">Operator Technician <br> Watlow</a></li>
-												<li><a href="#">Administratior Assistant <br> Mayo Clinic</a></li>
-												<li><a href="#">Security Officer <br> Premier Security</a></li>
-												<li><a href="#">SMT Machine Operator <br> Benchmark Electronics</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Publications</span>
-											<!-- <ul>
-												<li><a href="#">Coming Soon</a></li>
-											</ul> -->
-										</li>
-										<li>
-											<span class="opener">Projects</span>
-											<!-- <ul>
-												<li><a href="#">Coming Soon</a></li>
-											</ul> -->
-										</li>
-										<li>
-											<span class="opener">Volunteer</span>
-											<ul>
-												<li><a href="#">President - WSU Computer Science Club</a></li>
-												<li><a href="#">Volunteer - Find a Grave</a></li>
-												<li><a href="#">Habitat For Humanity</a></li>
-											</ul>
-										</li>
-										<li><a href="Lucca.html">Lucca</a></li>
-										<li><a href="oldIndex.html">The Beginning of this Website</a></li>
-									</ul>
-								</nav>
+      
+    </main>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Thank you for visiting my website. I'd love to hear from you and answer any questions you may have. Whether you want to collaborate on a project, discuss potential opportunities, or simply share your thoughts, feel free to reach out.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">ssommera@umich.edu</a></li>
-										<li class="icon solid fa-home">Minnesota, USA</li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <footer class="mt-20 text-sm text-gray-400">
+      <p>&copy; 2025 Stephen Sommer. Inspired by machine dreams & human resilience.</p>
+    </footer>
+  </body>
 </html>
+
