@@ -1,209 +1,783 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stephen Sommer | AI Researcher & Developer</title>
-    <link rel="icon" href="./images/Steve.jpg" type="image/png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-      body {
-        background-color: #0d1117;
-        color: #00ffe0;
-        font-family: 'Fira Code', monospace;
-      }
-      .neon-text {
-        color: #00ffe0;
-        text-shadow: 0 0 6px #00ffe0, 0 0 12px #00ffe0;
-      }
-      .glass {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border-radius: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-      iframe.bot {
-        border: none;
-        width: 100%;
-        height: 500px;
-        border-radius: 1rem;
-        background-color: rgba(0, 255, 224, 0.05);
-      }
-    </style>
-  </head>
-  <body class="min-h-screen flex flex-col items-center p-6">
-    <header class="w-full max-w-5xl flex justify-between items-center mb-10">
-      <h1 class="text-3xl font-bold neon-text">Stephen Sommer</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#skills" class="hover:underline">Skills</a>
-        <a href="#projects" class="hover:underline">Projects</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
-    </header>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stephen Sommer — Machine Learning on Neural &amp; Clinical Signals</title>
+<meta name="description" content="Stephen Sommer builds and evaluates machine learning systems for neural and clinical signal data. MS Computer Science (Machine Learning) at Georgia Tech; software developer working in Python, Databricks, and PyTorch." />
+<meta name="author" content="Stephen Sommer" />
+<link rel="canonical" href="https://ssommer.dev/" />
 
-    <main class="w-full max-w-5xl space-y-16">
-      <section id="about" class="glass p-6 shadow-xl">
-        <h2 class="text-2xl font-bold mb-4 neon-text">Who Am I?</h2>
-        <p class="text-lg">
-          AI/ML researcher & developer deeply curious about consciousness, machine learning, and the future of intelligence. I build intelligent systems, reflect on their implications, and dream of open-source breakthroughs that shape tomorrow.
-          <p class="mt-4">
-            Currently earning my Master's of Science in Computer Science – Machine Learning Specialization at Georgia Institute of Technology. I work full-time as a Software Developer at  <a href="https://www.fastenal.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-cyan-400">Fastenal</a>, 
-            where I apply data engineering and machine learning to solve real-world problems.
-            Based in Minnesota, I code with curiosity, hike deer trails with wonder, and practice dark arts rituals in the realm of neural networks.
-          </p>
-      </section>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ssommer.dev/" />
+<meta property="og:title" content="Stephen Sommer — Machine Learning on Neural &amp; Clinical Signals" />
+<meta property="og:description" content="EEG decoding, medical image segmentation, and reinforcement learning. MS CS (Machine Learning), Georgia Tech." />
+<meta name="twitter:card" content="summary_large_image" />
 
-      <section id="skills" class="glass p-6 shadow-xl">
-        <h2 class="text-2xl font-bold mb-4 neon-text">Skills</h2>
-        <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 list-disc list-inside">
-          <li>Python / Java / SQL</li>
-          <li>PyTorch / TensorFlow / Keras</li>
-          <li>Data Preprocessing & Modeling</li>
-          <li>Reinforcement Learning</li>
-          <li>NLP & Transformers</li>
-          <li>Research Methodology</li>
-        </ul>
-      </section>
+<link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+<link rel="alternate icon" href="./images/favicon.ico" sizes="16x16 32x32 48x48" />
+<link rel="apple-touch-icon" href="./images/icon-180.png" />
 
-      <section id="projects" class="glass p-6 shadow-xl">
-        <h2 class="text-2xl font-bold mb-4 neon-text">Projects & Publications</h2>
-      
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-        <!-- 🔬 Research Presentation -->
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-cyan-300">📄 Poster Presentation – Winona Research Celebration 2024</h3>
-        <p class="text-md text-gray-300">
-          I presented <strong>“Enhancing R2L Intrusion Detection Using Decision Trees”</strong> at the Winona State University Research & Creative Achievement Celebration. This research investigates the application of Decision Tree machine learning algorithms to improve Remote-to-Local (R2L) intrusion detection in cloud computing environments, addressing critical concerns of data security and privacy in the age of AI and big data.
-        </p>
-        <p class="text-md text-gray-300 mt-2">
-          Utilizing the KDD Cup 1999 and NSL-KDD datasets, the study evaluates the performance of the algorithm on each dataset independently and on a combined dataset. Results show that combining the datasets significantly enhances detection accuracy, achieving 99.93% accuracy, 91% detection rate, and a false alarm rate of 0.08%. This outperforms the individual dataset results: KDD Cup 1999 with 99.90% accuracy, 83% detection rate, and 1.08% false alarm rate, and NSL-KDD with 99.83% accuracy, 83% detection rate, and 0.08% false alarm rate.
-        </p>
-        <p class="text-md text-gray-300 mt-2">
-          The findings demonstrate how machine learning, specifically decision trees, can adaptively and effectively safeguard data integrity by rapidly identifying suspicious activities within intrusion detection systems.
-        </p>
-        <p class="mt-4 text-sm text-gray-400">
-          <a href="https://openriver.winona.edu/rca/2024/schedule/36/" target="_blank" class="underline hover:text-cyan-400">View Poster & Abstract</a>
-        </p>
-      </div>
-      
-        <!-- 🧠 GitHub Projects -->
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-cyan-300">🛠️ Featured Open-Source Projects</h3>
-        <ul class="list-disc pl-6 mt-2 text-gray-300 space-y-2">
-          <li>
-            <strong>📊 <a href="https://github.com/ssommera/statistical-array-analysis-python" target="_blank" class="underline hover:text-cyan-400">statistical-array-analysis-python</a></strong>: Python utility for generating synthetic integer arrays and computing key statistical metrics using only standard libraries.
-          </li>
-          <li>
-            <strong>🛡️ <a href="https://github.com/ssommera/intrusion-detection-system-using-decision-trees" target="_blank" class="underline hover:text-cyan-400">intrusion-detection-system-using-decision-trees</a></strong>: Jupyter Notebook demonstrating decision tree based machine learning for enhancing cybersecurity via R2L intrusion detection.
-          </li>
-          <li>
-            <strong>🎙️ <a href="https://github.com/ssommera/AIPersonalAssistant" target="_blank" class="underline hover:text-cyan-400">AIPersonalAssistant</a></strong>: Modular Python voice assistant sandbox exploring speech interfaces, LLM integration, and human-AI interaction components.
-          </li>
-        </ul>
-        <p class="mt-4 text-sm text-gray-400">
-          See more on <a href="https://github.com/ssommera" target="_blank" class="underline hover:text-cyan-400">my GitHub profile</a>.
-        </p>
-      </div>
-      
-        <!-- 📚 Future Research Interests -->
-        <div>
-          <h3 class="text-xl font-semibold text-cyan-300">📚 Research Interests</h3>
-          <ul class="list-disc pl-6 mt-2 text-gray-300">
-            <li>Integrating symbolic and connectionist AI architectures</li>
-            <li>Philosophical analysis of AI alignment and sentience</li>
-            <li>Bridging stoic ethics and reinforcement learning models</li>
-          </ul>
-        </div>
-      </section>
+<style>
+  :root{
+    /* Bakelite instrument housing */
+    --panel:      #241f1b;
+    --panel-deep: #14110f;
+    --panel-edge: #3a322c;
+    /* chart paper */
+    --chart:      #e8dcc4;
+    --chart-rule: #c9a88f;
+    /* pen ink + indicator lamp */
+    --ink:        #8c2e1f;
+    --lamp:       #e0a32e;
+    /* type */
+    --bone:       #d8cfc0;
+    --bone-dim:   #9b9184;
 
+    --display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+    --body:    "Archivo", system-ui, sans-serif;
+    --mono:    "IBM Plex Mono", ui-monospace, monospace;
 
-      <!-- 🔮 Section: Full Chatbot Embed -->
-    <section id="ai-bot" class="glass p-6 shadow-xl">
-      <h2 class="text-2xl font-bold mb-4 neon-text">Talk to My AI Assistant</h2>
-      <iframe
-        src="https://www.chatbase.co/chatbot-iframe/kXmF-OZwGqrRL1KNpaItT"
-        width="100%"
-        style="height: 100%; min-height: 700px"
-        frameborder="0"
-        class="bot"
-      ></iframe>
-      <p class="mt-4 text-sm text-gray-400">
-        This assistant is trained on AI research, neuroscience, machine learning, and philosophy of mind. Ask anything from beginner concepts to advanced topics!
+    --gutter: clamp(1.1rem, 4vw, 3rem);
+    --max: 1080px;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+
+  body{
+    margin:0;
+    background:
+      radial-gradient(120% 80% at 50% -10%, #2e2721 0%, var(--panel) 45%, var(--panel-deep) 100%);
+    color:var(--bone);
+    font-family:var(--body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:inherit; }
+
+  :focus-visible{
+    outline:2px solid var(--lamp);
+    outline-offset:3px;
+  }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 var(--gutter);
+  }
+
+  /* ---------- eyebrow / plate labels ---------- */
+  .plate{
+    font-family:var(--mono);
+    font-size:.68rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--bone-dim);
+  }
+
+  /* ---------- header ---------- */
+  .masthead{
+    border-bottom:1px solid var(--panel-edge);
+    background:rgba(20,17,15,.55);
+    position:sticky;
+    top:0;
+    z-index:20;
+    backdrop-filter:blur(6px);
+  }
+  .masthead-in{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    padding-top:.85rem;
+    padding-bottom:.85rem;
+    flex-wrap:wrap;
+  }
+  .wordmark{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:1.35rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    margin:0;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+  }
+  .lamp{
+    width:.55rem; height:.55rem;
+    border-radius:50%;
+    background:var(--lamp);
+    box-shadow:0 0 8px rgba(224,163,46,.75);
+    flex:none;
+  }
+  .channels{
+    display:flex;
+    gap:1.35rem;
+    flex-wrap:wrap;
+  }
+  .channels a{
+    font-family:var(--mono);
+    font-size:.7rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--bone-dim);
+    text-decoration:none;
+    padding-bottom:2px;
+    border-bottom:1px solid transparent;
+  }
+  .channels a:hover{ color:var(--lamp); border-bottom-color:var(--lamp); }
+
+  /* ---------- hero ---------- */
+  .hero{ padding:clamp(2.2rem,6vw,4rem) 0 clamp(2rem,5vw,3.5rem); }
+
+  .recorder{
+    background:var(--chart);
+    border-radius:2px;
+    border:1px solid #b9a186;
+    box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,.35),
+      0 14px 34px rgba(0,0,0,.45);
+    position:relative;
+    overflow:hidden;
+  }
+  .recorder::before{ /* chart paper ruling */
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      repeating-linear-gradient(to right, rgba(201,168,143,.55) 0 1px, transparent 1px 26px),
+      repeating-linear-gradient(to bottom, rgba(201,168,143,.35) 0 1px, transparent 1px 13px);
+    pointer-events:none;
+  }
+  #trace{ display:block; width:100%; height:210px; position:relative; }
+  .recorder-legend{
+    position:absolute;
+    left:.7rem; bottom:.5rem;
+    font-family:var(--mono);
+    font-size:.6rem;
+    letter-spacing:.14em;
+    color:#8a6f58;
+    text-transform:uppercase;
+  }
+  .recorder-pens{
+    position:absolute;
+    right:.7rem; top:.5rem;
+    font-family:var(--mono);
+    font-size:.6rem;
+    letter-spacing:.14em;
+    color:#8a6f58;
+    text-transform:uppercase;
+    text-align:right;
+  }
+
+  .hero-copy{ margin-top:clamp(1.6rem,4vw,2.4rem); }
+  .hero h2{
+    font-family:var(--display);
+    font-weight:800;
+    text-transform:uppercase;
+    font-size:clamp(2.4rem,7.5vw,4.6rem);
+    line-height:.94;
+    letter-spacing:.01em;
+    margin:.7rem 0 0;
+    max-width:16ch;
+  }
+  .hero h2 em{
+    font-style:normal;
+    color:var(--lamp);
+  }
+  .hero p.lede{
+    max-width:56ch;
+    margin:1.15rem 0 0;
+    font-size:1.05rem;
+    color:#c4bbad;
+  }
+
+  .actions{ display:flex; gap:.7rem; flex-wrap:wrap; margin-top:1.6rem; }
+  .btn{
+    font-family:var(--mono);
+    font-size:.72rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:.72rem 1.15rem;
+    border:1px solid var(--panel-edge);
+    background:rgba(232,220,196,.04);
+    transition:background .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .btn:hover{ border-color:var(--lamp); color:var(--lamp); }
+  .btn.primary{
+    background:var(--ink);
+    border-color:var(--ink);
+    color:#f4e7d6;
+  }
+  .btn.primary:hover{ background:#a33726; border-color:#a33726; color:#fff; }
+
+  /* ---------- section frame ---------- */
+  .band{ border-top:1px solid var(--panel-edge); padding:clamp(2.4rem,6vw,4rem) 0; }
+  .band-head{
+    display:flex;
+    align-items:baseline;
+    gap:1rem;
+    margin-bottom:1.8rem;
+    flex-wrap:wrap;
+  }
+  .band-head h3{
+    font-family:var(--display);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    font-size:clamp(1.5rem,3.4vw,2.1rem);
+    margin:0;
+  }
+  .rule{ flex:1; height:1px; background:var(--panel-edge); min-width:2rem; }
+
+  /* ---------- work ---------- */
+  .work{ display:grid; gap:1.1rem; }
+  .card{
+    display:block;
+    text-decoration:none;
+    background:rgba(232,220,196,.035);
+    border:1px solid var(--panel-edge);
+    border-left:3px solid var(--ink);
+    padding:1.35rem 1.4rem;
+    transition:background .15s ease, border-left-color .15s ease, transform .15s ease;
+  }
+  .card:hover{
+    background:rgba(232,220,196,.07);
+    border-left-color:var(--lamp);
+    transform:translateY(-2px);
+  }
+  @media (prefers-reduced-motion: reduce){ .card:hover{ transform:none; } }
+  .card h4{
+    font-family:var(--display);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    font-size:1.5rem;
+    margin:.35rem 0 .5rem;
+    line-height:1.05;
+  }
+  .card p{ margin:0; color:#c4bbad; max-width:70ch; }
+
+  /* instrument readout: the spec strip under each project */
+  .readout{
+    margin-top:1rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:.35rem .5rem;
+  }
+  .readout span{
+    font-family:var(--mono);
+    font-size:.66rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--bone-dim);
+    border:1px solid var(--panel-edge);
+    padding:.2rem .5rem;
+    white-space:nowrap;
+  }
+  .readout span b{ color:var(--chart); font-weight:500; }
+
+  .more-repos{
+    margin-top:1.4rem;
+    font-family:var(--mono);
+    font-size:.75rem;
+    color:var(--bone-dim);
+  }
+  .more-repos a{ color:var(--lamp); }
+
+  /* ---------- instruments (skills) ---------- */
+  .instruments{
+    display:grid;
+    gap:1px;
+    background:var(--panel-edge);
+    border:1px solid var(--panel-edge);
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  }
+  .bay{ background:var(--panel); padding:1.2rem 1.25rem; }
+  .bay h5{
+    font-family:var(--mono);
+    font-size:.66rem;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--lamp);
+    margin:0 0 .7rem;
+    font-weight:500;
+  }
+  .bay ul{ margin:0; padding:0; list-style:none; }
+  .bay li{
+    font-size:.92rem;
+    color:#c4bbad;
+    padding:.16rem 0;
+  }
+
+  /* ---------- record (timeline) ---------- */
+  .record{ display:grid; gap:0; }
+  .entry{
+    display:grid;
+    grid-template-columns:8.5rem 1fr;
+    gap:1.25rem;
+    padding:1.1rem 0;
+    border-top:1px solid rgba(58,50,44,.6);
+  }
+  .entry:first-child{ border-top:0; }
+  .entry .when{
+    font-family:var(--mono);
+    font-size:.72rem;
+    letter-spacing:.08em;
+    color:var(--bone-dim);
+    padding-top:.2rem;
+  }
+  .entry .what strong{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:1.2rem;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    display:block;
+    line-height:1.15;
+  }
+  .entry .what span{ color:#c4bbad; font-size:.95rem; }
+
+  /* ---------- interests ---------- */
+  .interests{ display:grid; gap:1.4rem; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+  .interest h5{
+    font-family:var(--display);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    font-size:1.2rem;
+    margin:0 0 .4rem;
+  }
+  .interest p{ margin:0; color:#c4bbad; font-size:.95rem; }
+
+  /* ---------- contact ---------- */
+  .contact-grid{
+    display:grid;
+    gap:1px;
+    background:var(--panel-edge);
+    border:1px solid var(--panel-edge);
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  }
+  .contact-grid a{
+    background:var(--panel);
+    padding:1.1rem 1.2rem;
+    text-decoration:none;
+    display:block;
+    transition:background .15s ease;
+  }
+  .contact-grid a:hover{ background:#2e2721; }
+  .contact-grid a .plate{ display:block; margin-bottom:.25rem; }
+  .contact-grid a .val{
+    font-family:var(--display);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    font-size:1.15rem;
+  }
+
+  footer{
+    border-top:1px solid var(--panel-edge);
+    padding:1.6rem 0 2.6rem;
+    font-family:var(--mono);
+    font-size:.68rem;
+    letter-spacing:.1em;
+    color:var(--bone-dim);
+    text-transform:uppercase;
+  }
+
+  @media (max-width:560px){
+    .entry{ grid-template-columns:1fr; gap:.3rem; }
+    #trace{ height:150px; }
+  }
+</style>
+</head>
+
+<body>
+
+<header class="masthead">
+  <div class="wrap masthead-in">
+    <h1 class="wordmark"><span class="lamp" aria-hidden="true"></span>Stephen Sommer</h1>
+    <nav class="channels" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#instruments">Instruments</a>
+      <a href="#record">Record</a>
+      <a href="#interests">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="wrap hero">
+    <div class="recorder">
+      <canvas id="trace" aria-label="Continuous EEG-style pen trace on chart paper" role="img"></canvas>
+      <div class="recorder-pens">Pen 1 · Pen 2 · Pen 3</div>
+      <div class="recorder-legend">50 µV ⌷ 1 s ⌷ Fp1 · Cz · O2</div>
+    </div>
+
+    <div class="hero-copy">
+      <p class="plate">Machine learning · Georgia Tech MS in progress</p>
+      <h2>Models that read <em>signals</em> from the brain and body</h2>
+      <p class="lede">
+        I build and evaluate machine learning systems on neural and clinical data: EEG decoding,
+        3D medical image segmentation, and reinforcement learning. By day I write Python and SQL
+        pipelines on Databricks that move data into a warehouse and lake. Everything below has a repo.
       </p>
-    </section>
+      <div class="actions">
+        <a class="btn primary" href="./ssommer_Resume (4).pdf">Résumé (PDF)</a>
+        <a class="btn" href="https://github.com/ssommera" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:ssommer.ai@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- 💬 Floating Assistant on All Pages -->
-    <script>
-      (function () {
-        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-          window.chatbase = (...args) => {
-            if (!window.chatbase.q) {
-              window.chatbase.q = [];
-            }
-            window.chatbase.q.push(args);
-          };
-          window.chatbase = new Proxy(window.chatbase, {
-            get(target, prop) {
-              if (prop === "q") {
-                return target.q;
-              }
-              return (...args) => target(prop, ...args);
-            }
-          });
-        }
+  <!-- ============ WORK ============ -->
+  <section class="wrap band" id="work">
+    <div class="band-head">
+      <h3>Selected work</h3><span class="rule"></span><span class="plate">Three of them</span>
+    </div>
 
-      const onLoad = function () {
-        const script = document.createElement("script");
-        script.src = "https://www.chatbase.co/embed.min.js";
-        script.id = "kXmF-OZwGqrRL1KNpaItT"; // <-- This is your Chatbase bot ID
-        script.setAttribute("chatbot-id", "kXmF-OZwGqrRL1KNpaItT");
-        script.setAttribute("domain", "www.chatbase.co");
-        document.body.appendChild(script);
-      };
+    <div class="work">
 
-      if (document.readyState === "complete") {
-        onLoad();
-      } else {
-        window.addEventListener("load", onLoad);
-      }
-    })();
-  </script>
+      <a class="card" href="https://github.com/ssommera/liminal-eeg" target="_blank" rel="noopener">
+        <p class="plate">EEG decoding · deep learning</p>
+        <h4>Liminal EEG — predicting experience intensity from brain recordings</h4>
+        <p>
+          Built an end-to-end pipeline in MNE and PyTorch over 34-subject DMT EEG recordings: ICA
+          artifact removal, epoching, and Welch power-spectral-density features. Benchmarked an
+          EEGNet convolutional model and a temporal Transformer against a published SVM baseline
+          under leave-one-subject-out cross-validation, so scores reflect generalization to unseen
+          people rather than memorized subjects.
+        </p>
+        <div class="readout">
+          <span>Data <b>34 subjects</b></span>
+          <span>Set <b>4,273 × 120</b></span>
+          <span>Models <b>EEGNet · Transformer</b></span>
+          <span>Eval <b>LOSO CV</b></span>
+          <span>Stack <b>MNE · PyTorch</b></span>
+        </div>
+      </a>
 
-      <!-- 💬 Contact Me -->
-      <section id="contact" class="glass p-6 shadow-xl">
-        <h2 class="text-2xl font-bold mb-4 neon-text">Let's Connect</h2>
-        <ul class="space-y-3 text-gray-300">
-          <li>
-            <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
-            <a href="mailto:ssommer.ai@gmail.com" class="hover:underline">Email Me</a>
-          </li>
-          <li>
-            <i class="fab fa-github mr-2" aria-hidden="true"></i>
-            <a href="https://github.com/ssommera" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a>
-          </li>
-          <li>
-            <i class="fab fa-linkedin mr-2" aria-hidden="true"></i>
-            <a href="https://www.linkedin.com/in/stephen-sommer-0a6bb0164/" target="_blank" rel="noopener noreferrer" class="hover:underline">LinkedIn</a>
-          </li>
-          <li>
-            <i class="fab fa-youtube mr-2" aria-hidden="true"></i>
-            <a href="https://www.youtube.com/channel/UC3gU7MeGGn2jDfc2GNCFjKw" target="_blank" rel="noopener noreferrer" class="hover:underline">YouTube</a>
-          </li>
-          <li>
-            <i class="fab fa-stack-overflow mr-2" aria-hidden="true"></i>
-            <a href="https://stackoverflow.com/users/14005968/pickles91" target="_blank" rel="noopener noreferrer" class="hover:underline">Stack Overflow</a>
-          </li>
+      <a class="card" href="https://github.com/ssommera/Prostate-Segmentation" target="_blank" rel="noopener">
+        <p class="plate">Medical imaging · research assistantship</p>
+        <h4>3D prostate MRI segmentation with nnU-Net v2</h4>
+        <p>
+          Trained and evaluated 3D segmentation models on Task05 of the Medical Segmentation
+          Decathlon as a CS research assistant at Winona State. Work covered preprocessing multi-modal
+          MRI volumes, configuring nnU-Net v2 training, and reading the resulting overlap metrics
+          against the reference annotations.
+        </p>
+        <div class="readout">
+          <span>Data <b>MSD Task05</b></span>
+          <span>Model <b>nnU-Net v2</b></span>
+          <span>Task <b>3D segmentation</b></span>
+          <span>Role <b>Research assistant</b></span>
+        </div>
+      </a>
+
+      <a class="card" href="https://openriver.winona.edu/rca/2024/schedule/36/" target="_blank" rel="noopener">
+        <p class="plate">Security ML · poster, Winona RCA 2024</p>
+        <h4>Decision trees for remote-to-local intrusion detection</h4>
+        <p>
+          Compared decision-tree detection of R2L attacks trained on KDD Cup 1999, on NSL-KDD, and on
+          the two combined. Merging the datasets raised accuracy to 99.93% with a 91% detection rate
+          and a 0.08% false-alarm rate, beating either dataset alone. Presented at the Winona State
+          Research and Creative Achievement Celebration.
+        </p>
+        <div class="readout">
+          <span>Accuracy <b>99.93%</b></span>
+          <span>Detection <b>91%</b></span>
+          <span>False alarm <b>0.08%</b></span>
+          <span>Data <b>KDD99 + NSL-KDD</b></span>
+        </div>
+      </a>
+
+    </div>
+
+    <p class="more-repos">
+      Also on GitHub: reinforcement learning coursework, an intrusion-detection notebook, and a
+      modular voice-assistant sandbox →
+      <a href="https://github.com/ssommera" target="_blank" rel="noopener">github.com/ssommera</a>
+    </p>
+  </section>
+
+  <!-- ============ INSTRUMENTS ============ -->
+  <section class="wrap band" id="instruments">
+    <div class="band-head">
+      <h3>Instruments</h3><span class="rule"></span><span class="plate">What I work in</span>
+    </div>
+
+    <div class="instruments">
+      <div class="bay">
+        <h5>Modeling</h5>
+        <ul>
+          <li>PyTorch</li>
+          <li>TensorFlow / Keras</li>
+          <li>scikit-learn</li>
+          <li>Reinforcement learning</li>
+          <li>Transformers &amp; NLP</li>
         </ul>
-      </section>
+      </div>
+      <div class="bay">
+        <h5>Signal &amp; imaging</h5>
+        <ul>
+          <li>MNE-Python</li>
+          <li>ICA artifact removal</li>
+          <li>Welch PSD / band power</li>
+          <li>nnU-Net v2</li>
+          <li>Leave-one-subject-out CV</li>
+        </ul>
+      </div>
+      <div class="bay">
+        <h5>Data engineering</h5>
+        <ul>
+          <li>Databricks</li>
+          <li>Python ETL pipelines</li>
+          <li>Oracle PL/SQL</li>
+          <li>Warehouse &amp; lake modeling</li>
+          <li>Power BI</li>
+        </ul>
+      </div>
+      <div class="bay">
+        <h5>Platform</h5>
+        <ul>
+          <li>Python · Java · SQL</li>
+          <li>Terraform</li>
+          <li>Azure AI Foundry</li>
+          <li>Git</li>
+          <li>Secure development (OWASP)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-      
-    </main>
+  <!-- ============ RECORD ============ -->
+  <section class="wrap band" id="record">
+    <div class="band-head">
+      <h3>Record</h3><span class="rule"></span><span class="plate">Education &amp; roles</span>
+    </div>
 
-    <footer class="mt-20 text-sm text-gray-400">
-      <p>&copy; 2025 Stephen Sommer. Inspired by machine dreams & human resilience.</p>
-    </footer>
-  </body>
+    <div class="record">
+      <div class="entry">
+        <div class="when">In progress</div>
+        <div class="what">
+          <strong>MS Computer Science, Machine Learning</strong>
+          <span>Georgia Institute of Technology. Coursework: Artificial Intelligence, Machine Learning,
+          Reinforcement Learning, Data &amp; Visual Analytics, Game AI.</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2023 —</div>
+        <div class="what">
+          <strong>Software Developer, Fastenal</strong>
+          <span>Python and Oracle PL/SQL ETL on Databricks feeding the data warehouse and data lake;
+          data cleaning, curation, and ad-hoc analysis. Member of the Best Practices and AI Dev
+          Efficiency groups.</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2024</div>
+        <div class="what">
+          <strong>CS Research Assistant, Winona State</strong>
+          <span>3D prostate MRI segmentation with nnU-Net v2, and decision-tree intrusion detection
+          presented at the university research celebration.</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2022 — 2024</div>
+        <div class="what">
+          <strong>Software Developer, Winona State</strong>
+          <span>Built and maintained the university and CS department sites, configured course VMs,
+          supported lab technology, and tutored students.</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2024</div>
+        <div class="what">
+          <strong>BS Computer Science, Winona State</strong>
+          <span>3.86 GPA. Minor in Psychology (neuroscience and cognitive science). CS Club president.
+          Preceded by an AS in Computer Science, RCTC, 4.0 GPA, completed while working full time.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERESTS ============ -->
+  <section class="wrap band" id="interests">
+    <div class="band-head">
+      <h3>What I want to work on</h3><span class="rule"></span><span class="plate">Research</span>
+    </div>
+
+    <div class="interests">
+      <div class="interest">
+        <h5>Neural decoding</h5>
+        <p>Learning representations from EEG and other biosignals that hold up across subjects, not
+        just across epochs from the same recording.</p>
+      </div>
+      <div class="interest">
+        <h5>Better algorithms, not bigger runs</h5>
+        <p>Sample efficiency and stability in reinforcement learning, and understanding why a method
+        works rather than only that it scored well.</p>
+      </div>
+      <div class="interest">
+        <h5>Machine minds</h5>
+        <p>What it would take to make claims about machine awareness testable, and what alignment
+        research owes to philosophy of mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="wrap band" id="contact">
+    <div class="band-head">
+      <h3>Get in touch</h3><span class="rule"></span><span class="plate">Minnesota · open to remote</span>
+    </div>
+
+    <div class="contact-grid">
+      <a href="mailto:ssommer.ai@gmail.com">
+        <span class="plate">Email</span><span class="val">ssommer.ai</span>
+      </a>
+      <a href="https://www.linkedin.com/in/stephen-sommer-0a6bb0164/" target="_blank" rel="noopener">
+        <span class="plate">LinkedIn</span><span class="val">Stephen Sommer</span>
+      </a>
+      <a href="https://github.com/ssommera" target="_blank" rel="noopener">
+        <span class="plate">GitHub</span><span class="val">ssommera</span>
+      </a>
+      <a href="https://stackoverflow.com/users/14005968/pickles91" target="_blank" rel="noopener">
+        <span class="plate">Stack Overflow</span><span class="val">Profile</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  © 2026 Stephen Sommer · Built by hand, no framework
+</footer>
+
+<script>
+/* ---------- chart-recorder pen trace ---------- */
+(function () {
+  var cvs = document.getElementById('trace');
+  if (!cvs) return;
+  var ctx = cvs.getContext('2d');
+  var W = 0, H = 0, offset = 0, raf = null;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function resize() {
+    var r = cvs.getBoundingClientRect();
+    var d = window.devicePixelRatio || 1;
+    cvs.width = Math.max(1, Math.round(r.width * d));
+    cvs.height = Math.max(1, Math.round(r.height * d));
+    ctx.setTransform(d, 0, 0, d, 0, 0);
+    W = r.width; H = r.height;
+    draw();
+  }
+
+  /* deterministic pseudo-noise so the trace scrolls instead of shimmering */
+  function noise(s) {
+    var x = Math.sin(s * 12.9898) * 43758.5453;
+    return (x - Math.floor(x)) - 0.5;
+  }
+
+  var CH = [
+    { f1: 0.031, f2: 0.077, f3: 0.013, ph: 0.0, amp: 1.00 },
+    { f1: 0.019, f2: 0.058, f3: 0.009, ph: 1.7, amp: 0.78 },
+    { f1: 0.044, f2: 0.101, f3: 0.021, ph: 3.1, amp: 0.62 }
+  ];
+
+  function sample(c, s, amp) {
+    return amp * (
+      Math.sin(s * c.f1 + c.ph) +
+      0.55 * Math.sin(s * c.f2 + c.ph * 1.3) +
+      0.35 * Math.sin(s * c.f3) +
+      0.30 * noise(Math.floor(s / 3))
+    );
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    var rows = CH.length;
+    var band = H / rows;
+    ctx.lineWidth = 1.4;
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = '#8c2e1f';
+
+    for (var i = 0; i < rows; i++) {
+      var c = CH[i];
+      var mid = band * i + band / 2;
+      var amp = (band * 0.30) * c.amp;
+      ctx.globalAlpha = i === 0 ? 0.95 : (i === 1 ? 0.75 : 0.6);
+      ctx.beginPath();
+      for (var x = 0; x <= W; x += 2) {
+        var s = x + offset;
+        var y = mid + sample(c, s, amp);
+        if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  function loop() {
+    offset += 1.1;
+    draw();
+    raf = requestAnimationFrame(loop);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  if (!reduce) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) { cancelAnimationFrame(raf); raf = null; }
+      else if (!raf) { raf = requestAnimationFrame(loop); }
+    });
+    raf = requestAnimationFrame(loop);
+  }
+})();
+</script>
+
+<!--
+  Chatbase floating assistant. Loaded once, as a widget only — the old full-page
+  iframe plus widget meant the bot loaded twice. Delete this block to remove it.
+-->
+<script>
+(function () {
+  if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+    window.chatbase = function () { (window.chatbase.q = window.chatbase.q || []).push(arguments); };
+    window.chatbase = new Proxy(window.chatbase, {
+      get: function (target, prop) {
+        if (prop === "q") return target.q;
+        return function () { return target.apply(null, [prop].concat([].slice.call(arguments))); };
+      }
+    });
+  }
+  var onLoad = function () {
+    var s = document.createElement("script");
+    s.src = "https://www.chatbase.co/embed.min.js";
+    s.id = "kXmF-OZwGqrRL1KNpaItT";
+    s.setAttribute("chatbot-id", "kXmF-OZwGqrRL1KNpaItT");
+    s.setAttribute("domain", "www.chatbase.co");
+    document.body.appendChild(s);
+  };
+  if (document.readyState === "complete") onLoad();
+  else window.addEventListener("load", onLoad);
+})();
+</script>
+
+</body>
 </html>
-
