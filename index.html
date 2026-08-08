@@ -4,14 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Stephen Sommer - Machine Learning Engineer</title>
-<meta name="description" content="Stephen Sommer builds and evaluates machine learning systems for neural and clinical signal data. MS Computer Science (Machine Learning) at Georgia Tech; software developer working in Python, Databricks, and PyTorch." />
+<meta name="description" content="Stephen Sommer builds and evaluates machine learning systems across security classification, medical imaging, and reinforcement learning. MS Computer Science (Machine Learning) at Georgia Tech; software developer working in Python, Databricks, and PyTorch." />
 <meta name="author" content="Stephen Sommer" />
 <link rel="canonical" href="https://ssommer.dev/" />
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ssommer.dev/" />
 <meta property="og:title" content= "Stephen Sommer - Machine Learning Engineer" />
-<meta property="og:description" content="EEG decoding, medical image segmentation, and reinforcement learning. MS CS (Machine Learning), Georgia Tech." />
+<meta property="og:description" content="Intrusion detection, medical image segmentation, and reinforcement learning. MS CS (Machine Learning), Georgia Tech." />
 <meta name="twitter:card" content="summary_large_image" />
 
 <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
@@ -24,17 +24,17 @@
 
 <style>
   :root{
-    /* Bakelite instrument housing */
+    
     --panel:      #241f1b;
     --panel-deep: #14110f;
     --panel-edge: #3a322c;
-    /* chart paper */
+   
     --chart:      #e8dcc4;
     --chart-rule: #c9a88f;
-    /* pen ink + indicator lamp */
+  
     --ink:        #8c2e1f;
     --lamp:       #e0a32e;
-    /* type */
+   
     --bone:       #d8cfc0;
     --bone-dim:   #9b9184;
 
@@ -257,6 +257,8 @@
     transform:translateY(-2px);
   }
   @media (prefers-reduced-motion: reduce){ .card:hover{ transform:none; } }
+  .card.pending{ border-left-style:dashed; cursor:default; }
+  .card.pending:hover{ transform:none; border-left-color:var(--ink); background:rgba(232,220,196,.035); }
   .card h4{
     font-family:var(--display);
     font-weight:700;
@@ -428,12 +430,14 @@
     </div>
 
     <div class="hero-copy">
-      <p class="plate">Machine learning · Georgia Tech MS in progress</p>
-      <h2>Models that read <em>signals</em> from the brain and body</h2>
+      <p class="plate">Software developer → machine learning scientist</p>
+      <h2>Machine learning across signals, images, and decisions</h2>
       <p class="lede">
-        I build and evaluate machine learning systems on neural and clinical data: EEG decoding,
-        3D medical image segmentation, and reinforcement learning. By day I write Python and SQL
-        pipelines on Databricks that move data into a warehouse and lake. Everything below has a repo.
+        I'm a software developer finishing an MS in Machine Learning at Georgia Tech, working toward
+        a career as a machine learning scientist. My project work spans security classification,
+        medical image segmentation, and reinforcement learning. By day I write Python and SQL
+        pipelines on Databricks that move data into a warehouse and lake. Completed work below has a
+        repo; work still in progress is marked as such.
       </p>
       <div class="actions">
         <a class="btn primary" href="./ssommer_Resume (5).pdf">Résumé (PDF)</a>
@@ -451,42 +455,6 @@
 
     <div class="work">
 
-      <a class="card" href="https://github.com/ssommera/liminal-eeg" target="_blank" rel="noopener">
-        <p class="plate">EEG decoding · deep learning</p>
-        <h4>Liminal EEG — predicting experience intensity from brain recordings</h4>
-        <p>
-          Built an end-to-end pipeline in MNE and PyTorch over 34-subject DMT EEG recordings: ICA
-          artifact removal, epoching, and Welch power-spectral-density features. Benchmarked an
-          EEGNet convolutional model and a temporal Transformer against a published SVM baseline
-          under leave-one-subject-out cross-validation, so scores reflect generalization to unseen
-          people rather than memorized subjects.
-        </p>
-        <div class="readout">
-          <span>Data <b>34 subjects</b></span>
-          <span>Set <b>4,273 × 120</b></span>
-          <span>Models <b>EEGNet · Transformer</b></span>
-          <span>Eval <b>LOSO CV</b></span>
-          <span>Stack <b>MNE · PyTorch</b></span>
-        </div>
-      </a>
-
-      <a class="card" href="https://github.com/ssommera/Prostate-Segmentation" target="_blank" rel="noopener">
-        <p class="plate">Medical imaging · research assistantship</p>
-        <h4>3D prostate MRI segmentation with nnU-Net v2</h4>
-        <p>
-          Trained and evaluated 3D segmentation models on Task05 of the Medical Segmentation
-          Decathlon as a CS research assistant at Winona State. Work covered preprocessing multi-modal
-          MRI volumes, configuring nnU-Net v2 training, and reading the resulting overlap metrics
-          against the reference annotations.
-        </p>
-        <div class="readout">
-          <span>Data <b>MSD Task05</b></span>
-          <span>Model <b>nnU-Net v2</b></span>
-          <span>Task <b>3D segmentation</b></span>
-          <span>Role <b>Research assistant</b></span>
-        </div>
-      </a>
-
       <a class="card" href="https://openriver.winona.edu/rca/2024/schedule/36/" target="_blank" rel="noopener">
         <p class="plate">Security ML · poster, Winona RCA 2024</p>
         <h4>Decision trees for remote-to-local intrusion detection</h4>
@@ -503,6 +471,40 @@
           <span>Data <b>KDD99 + NSL-KDD</b></span>
         </div>
       </a>
+
+      <a class="card" href="https://github.com/ssommera/prostate-mri-segmentation-nnunet" target="_blank" rel="noopener">
+        <p class="plate">Medical imaging · research assistantship</p>
+        <h4>3D prostate MRI segmentation with nnU-Net v2</h4>
+        <p>
+          Trained and evaluated 3D segmentation models on Task05 of the Medical Segmentation
+          Decathlon as a CS research assistant at Winona State. Work covered preprocessing multi-modal
+          MRI volumes, configuring nnU-Net v2 training, and reviewing predicted segmentations against
+          the reference annotations in MITK.
+        </p>
+        <div class="readout">
+          <span>Data <b>MSD Task05</b></span>
+          <span>Model <b>nnU-Net v2</b></span>
+          <span>Task <b>3D segmentation</b></span>
+          <span>Role <b>Research assistant</b></span>
+        </div>
+      </a>
+
+      <div class="card pending">
+        <p class="plate">EEG decoding · deep learning · planned, fall 2026</p>
+        <h4>Liminal EEG — predicting experience intensity from brain recordings</h4>
+        <p>
+          Planned research project analyzing 34-subject EEG recordings with MNE and PyTorch: ICA
+          artifact removal, epoching, and Welch power-spectral-density features, benchmarking an
+          EEGNet convolutional model and a temporal Transformer against a published SVM baseline
+          under leave-one-subject-out cross-validation. Goal is a written, published paper.
+        </p>
+        <div class="readout">
+          <span>Status <b>Not yet started</b></span>
+          <span>Data <b>34 subjects</b></span>
+          <span>Models <b>EEGNet · Transformer</b></span>
+          <span>Goal <b>Published paper</b></span>
+        </div>
+      </div>
 
     </div>
 
